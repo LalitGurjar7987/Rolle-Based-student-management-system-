@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 230px;
+    background: #1e88e5;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 30px;
+    background: #f4f6f9;
+}
+
+.content h1 {
+    margin-bottom: 10px;
+}
+
+.cards {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 18px;
+}
+/* ===== GENERAL ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* ===== TOP BAR ===== */
+.topbar {
+    background: #1e88e5;
+    color: white;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user-info {
+    font-size: 14px;
+}
+
+.logout-btn {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    background: #e53935;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.logout-btn:hover {
+    background: #c62828;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+/* ===== SUBJECT LIST ===== */
+.subject-list {
+    list-style: none;
+    padding: 0;
+}
+
+.subject-list li {
+    padding: 10px;
+    background: #f1f1f1;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.empty {
+    color: gray;
+    font-style: italic;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+.marks-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.marks-table th, .marks-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.marks-table th {
+    background: #1e88e5;
+    color: white;
+}
+
+.empty {
+    color: #777;
+    font-style: italic;
+}
